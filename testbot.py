@@ -50,17 +50,19 @@ for item in data["result"]:
 
             if "Hi" in message.lower():
                  
-                text= "Hey Man!"
+                text= f"Hey Man! {user_name}"
                 # text = '"<a href="tg://user?id={}">@{}</a> Hi, What Up! ,Do let me know if you need any help"'.format(user_id,user_name)
                 go_url = f'https://api.telegram.org/bot{token}/sendMessage?chat_id={groupid}&text={text}'
                 resp = requests.get(go_url)
                
 
             else:
-              print("Error : Colud not send!")
+              pass 
+            #    print("Error : Colud not send!")
             
         except:
-            print("Error!")
+            # print("Error!")
+            pass
 
 print("Program end")
 
