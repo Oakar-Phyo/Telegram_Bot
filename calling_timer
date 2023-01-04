@@ -1,6 +1,6 @@
 import requests 
 import time
-msg =['Hey Man','What Up!','Everything is ok right?']
+msg =['Hey Man','Everything is ok right?']
 
 for send in msg:
   
