@@ -23,11 +23,11 @@ def custom_command(update, context):
 
 def handle_response(text) -> str:
     # Create your own response logic
-
-    if "hello" in text:
+    
+    if 'Hey Man' in text:
         return 'Hey there!'
     
-    if 'open google' in text:
+    if 'google' in text:
         google ='https://www.google.com/'
         requests.get(google)
         return (google)
@@ -36,10 +36,12 @@ def handle_response(text) -> str:
         return 'I\'m Ryan!'
     
     if 'call' in text:
-        call_ph= 'http://api.callmebot.com/start.php?source=HA&user=@oakarphyoe&text=Hey_Man_What_Up&lang=en-GB-Standard-B'
+        call_ph = 'http://api.callmebot.com/start.php?source=HA&user=@oakarphyoe&text=Hey_Man&lang=en-GB-Standard-B'
+        
         requests.get(call_ph)
-        return (call_ph)
+        return 'Calling'
     
+
     # if 'ph' in text:
     #     ph= f'https://api.callmebot.com/signal/send.php?phone=+959782449624&apikey={Token}&text=Hey_Man_What_Up&lang=en-GB-Standard-B'
     #     requests.get(ph)
