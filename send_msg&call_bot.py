@@ -1,7 +1,7 @@
 from telegram.ext import *
 import requests
 
-Token = "5982639798:AAGlm4LMOvt6zYb9cBuWRE11XRT5B-X_IOQ"
+Token = your token
 
 print('Starting up bot...')
 
