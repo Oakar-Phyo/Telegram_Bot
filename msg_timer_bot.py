@@ -1,9 +1,12 @@
 import requests 
 import time
-msg =['Hey Man','What Up!','Everything is ok right?','My name is Ryan']
+
+token = your token
+groupid= your groupid
+msg =['Hey Man','What Up!','Are you ok?']
 
 for send in msg:
-  url = 'https://api.telegram.org/bot5982639798:AAGlm4LMOvt6zYb9cBuWRE11XRT5B-X_IOQ/sendMessage?chat_id=-1001639787748&text={}'.format(send)
+  url = f'https://api.telegram.org/bot{token}/sendMessage?chat_id={groupid}&text={msg}'
   requests.get(url)
   time.sleep(15)
   print (send)
