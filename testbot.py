@@ -1,7 +1,7 @@
 import requests
 
-token = "5982639798:AAGlm4LMOvt6zYb9cBuWRE11XRT5B-X_IOQ"
-groupid = "-1001639787748"
+token = your token
+groupid =your groupid
 
 
 url ='https://api.telegram.org/bot{}/getUpdates'.format(token)
